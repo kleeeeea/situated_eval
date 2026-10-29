@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#081422" />
+  <meta name="description" content="Beyond Task-Based Evaluation: Toward Situated Benchmarks for Educational LLMs — EMNLP 2026 Findings." />
+  <meta property="og:title" content="Beyond Task-Based Evaluation | EMNLP 2026" />
+  <meta property="og:description" content="Toward situated benchmarks that evaluate pedagogical actions in context." />
+  <meta property="og:type" content="website" />
+  <title>Situated Evaluation · EMNLP 2026 Findings</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="top"><div class="container nav-wrap">
+    <a href="#top" class="brand" aria-label="Situated Evaluation home"><span class="brand-symbol">S<span>.</span></span><span class="brand-label">SITUATED<span> / EVAL</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#overview">Overview</a><a href="#framework">Framework</a><a href="#roadmap">Roadmap</a><a href="#applications">Applications</a><a href="#citation">Citation</a><a href="https://aclanthology.org/2026.findings-emnlp.1503.pdf" target="_blank" rel="noopener" class="nav-paper">Read paper <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main">
+    <section class="hero"><div class="hero-mesh" aria-hidden="true"></div><div class="container hero-grid">
+      <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> EMNLP 2026 <span class="eyebrow-divider">/</span> FINDINGS <span class="eyebrow-divider">/</span> POSITION PAPER</div>
+        <h1>Beyond <em>Task-Based</em> Evaluation<span class="heading-period">.</span></h1>
+        <p class="hero-subtitle">Toward Situated Benchmarks for Educational LLMs</p>
+        <p class="hero-description">What if we evaluated educational AI not just by the answers it gives, but by the <strong>learning it makes possible</strong>?</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="https://aclanthology.org/2026.findings-emnlp.1503.pdf" target="_blank" rel="noopener"><span aria-hidden="true">↗</span> Read the paper</a><a class="btn btn-outline" href="#framework">Explore the framework <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-visual" aria-label="Conceptual diagram: learner context informs pedagogical action which affects learning progression">
+        <div class="visual-glow"></div><div class="visual-label top-label">A NEW UNIT OF EVALUATION</div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="diagram-box db-context"><span class="box-tag">01 / INPUT</span><strong>Learner context</strong><small>Knowledge · history · goals</small></div>
+        <div class="diagram-box db-action"><span class="box-tag">02 / ACTION</span><strong>Pedagogical action</strong><small>Feedback · hints · scaffolding</small></div>
+        <div class="diagram-box db-outcome"><span class="box-tag">03 / EVIDENCE</span><strong>Learning progression</strong><small>Revision · transfer · growth</small></div>
+        <svg class="diagram-lines" viewBox="0 0 460 460" aria-hidden="true"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#b5e6d5" stroke-width="1.4"/></marker></defs><path d="M230 146 C230 161 230 176 230 195" marker-end="url(#arrow)"/><path d="M230 273 C230 290 230 303 230 325" marker-end="url(#arrow)"/><path class="dashed" d="M103 361 C28 335 28 125 101 103" /></svg>
+        <div class="visual-caption">FROM ISOLATED OUTPUTS TO SITUATED TEACHING ACTIONS</div>
+      </div>
+    </div><div class="container hero-bottom"><span>RETHINKING WHAT EDUCATIONAL AI BENCHMARKS MEASURE</span><a href="#overview">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div></section>
+
+    <section class="authors-strip"><div class="container"><p class="micro-label">AUTHORS</p><p class="authors">Xiaolong Wang<span class="dot">·</span> Tianyi Xu<span class="dot">·</span> Rui Zou<span class="dot">·</span> Jiawen Zuo<span class="dot">·</span> Mingzi Zhang<span class="dot">·</span> Keqian Li<span class="dot">·</span> Zhe Zhao<span class="dot">·</span> Ye Wei<span class="dot">·</span> Aimin Zhou</p><p class="affiliations">East China Normal University &nbsp; / &nbsp; City University of Hong Kong &nbsp; / &nbsp; Columbia University &nbsp; / &nbsp; Stanford University &nbsp; / &nbsp; Shanghai Innovation Institute</p></div></section>
+
+    <section class="section section-light" id="overview"><div class="container"><div class="section-kicker"><span>01</span> / THE PROBLEM</div><div class="overview-grid"><div><h2>Good answers.<br /><em>Not necessarily</em><br />good teaching.</h2></div><div class="body-large"><p>Educational LLM benchmarks have become increasingly sophisticated. Yet most still examine a single input–output episode: Is the response correct, clear, or complete?</p><p>Real teaching is different. The value of a hint depends on <strong>who receives it, what came before, and what happens next.</strong> A perfectly correct explanation might still fail to support learning.</p><div class="highlight-line"><span class="highlight-icon">↗</span><p>We argue for a shift in the evaluation target: <strong>from output quality to pedagogical action in context.</strong></p></div></div></div><div class="comparison"><div class="comparison-card old"><div class="comparison-meta">THE DOMINANT PARADIGM <span>→</span></div><h3>Task-based evaluation</h3><p>One prompt. One response. One score.</p><div class="mini-exchange"><div class="exchange-row">INPUT <span>Explain this concept.</span></div><div class="exchange-row">MODEL <span>Accurate explanation.</span></div><div class="score-pill">✓ Correct answer</div></div><p class="comparison-foot">Measures output quality in isolation</p></div><div class="comparison-card new"><div class="comparison-meta">THE PROPOSED DIRECTION <span>↗</span></div><h3>Situated evaluation</h3><p>Context. Action. Subsequent evidence.</p><div class="mini-exchange"><div class="exchange-row">CONTEXT <span>Learner history + goals</span></div><div class="exchange-row">ACTION <span>Adaptive teaching response</span></div><div class="exchange-row">FOLLOW-UP <span>Revision + transfer</span></div><div class="score-pill teal">↗ Pedagogical value in context</div></div><p class="comparison-foot">Examines quality, fit, and learning progression</p></div></div></div></section>
+
+    <section class="section section-dark" id="framework"><div class="container"><div class="section-kicker light"><span>02</span> / THE FRAMEWORK</div><div class="section-heading-row"><h2>Three layers.<br /><em>One richer picture.</em></h2><p>Situated benchmarks should distinguish what a model says, whether it fits the teaching situation, and what learning evidence follows.</p></div><div class="framework-grid"><button class="layer-card active" data-layer="0" aria-pressed="true"><div class="layer-no">LAYER 01 <span>↗</span></div><div class="layer-icon">◎</div><h3>Task Quality</h3><p>Is the output accurate, clear, coherent, and structurally sound?</p><div class="card-bottom">OUTPUT <span>↗</span></div></button><button class="layer-card" data-layer="1" aria-pressed="false"><div class="layer-no">LAYER 02 <span>↗</span></div><div class="layer-icon">⌘</div><h3>Contextual Fit</h3><p>Is the teaching action appropriate for this learner, history, and goal?</p><div class="card-bottom">SITUATION <span>↗</span></div></button><button class="layer-card" data-layer="2" aria-pressed="false"><div class="layer-no">LAYER 03 <span>↗</span></div><div class="layer-icon">↗</div><h3>Learning Progression</h3><p>Does the action support revision, transfer, self-explanation, or advancement?</p><div class="card-bottom">CONSEQUENCE <span>↗</span></div></button></div><div class="layer-detail" aria-live="polite"><div><span class="detail-eyebrow" id="detail-tag">SELECTED / LAYER 01</span><h3 id="detail-title">Task Quality</h3></div><p id="detail-desc">The essential foundation: reliable educational content, judged for correctness and clarity. Situated evaluation builds on this layer rather than replacing it.</p></div><p class="framework-note">These layers are organizing principles, not a fixed universal scoring scale. Appropriate metrics and evidence depend on the teaching task.</p></div></section>
+
+    <section class="section section-cream" id="roadmap"><div class="container"><div class="section-kicker"><span>03</span> / BUILDING THE NEXT BENCHMARKS</div><div class="roadmap-head"><h2>Simulate first.<br /><em>Calibrate with reality.</em></h2><p>A pragmatic route to situated evaluation that balances scalability with educational validity.</p></div><div class="roadmap-flow"><div class="roadmap-step"><div class="step-top"><span>01</span><span>↗</span></div><div class="step-graphic"><span>◇</span></div><h3>Define teaching episodes</h3><p>Specify learner state, interaction history, instructional goal, and the pedagogical action to assess.</p></div><div class="roadmap-connector">→</div><div class="roadmap-step"><div class="step-top"><span>02</span><span>↗</span></div><div class="step-graphic"><span>◉</span></div><h3>Prototype in simulation</h3><p>Use controlled tutoring traces and virtual environments to refine repeatable protocols.</p></div><div class="roadmap-connector">→</div><div class="roadmap-step"><div class="step-top"><span>03</span><span>↗</span></div><div class="step-graphic"><span>✳</span></div><h3>Calibrate empirically</h3><p>Check proxy signals against teacher review, limited student interactions, and classroom evidence.</p></div></div><div class="roadmap-notice"><span class="notice-mark">!</span><p><strong>Research roadmap, not a released benchmark.</strong> The paper proposes a position and design principles; it does not claim to have built or validated a unified situated benchmark.</p></div></div></section>
+
+    <section class="section section-light" id="applications"><div class="container"><div class="section-kicker"><span>04</span> / WHERE THIS TAKES US</div><div class="section-heading-row applications-head"><h2>From isolated tasks<br />to <em>learning processes.</em></h2><p>Situated protocols can extend familiar educational benchmark tasks without discarding existing quality measures.</p></div><div class="applications-list"><article class="application"><span class="app-num">01 /</span><div><h3>Question generation → Learning pathways</h3><p>Evaluate whether sequences of questions fit learner needs and support continued progression.</p></div><span class="app-arrow">↗</span></article><article class="application"><span class="app-num">02 /</span><div><h3>Knowledge answering → History-sensitive support</h3><p>Test whether explanations adapt to what the learner already understands or misunderstands.</p></div><span class="app-arrow">↗</span></article><article class="application"><span class="app-num">03 /</span><div><h3>One-shot feedback → Repair trajectories</h3><p>Look beyond a single helpful response to the student's subsequent correction and revision.</p></div><span class="app-arrow">↗</span></article><article class="application"><span class="app-num">04 /</span><div><h3>Static analysis → Instructional decisions</h3><p>Assess how well analysis helps teachers choose meaningful next steps.</p></div><span class="app-arrow">↗</span></article></div></div></section>
+
+    <section class="quote-section"><div class="container"><div class="quote-mark">“</div><blockquote>The next step is not to abandon tasks, but to return them to educational context.</blockquote><p>THE CENTRAL MESSAGE <span>—</span> BEYOND TASK-BASED EVALUATION</p></div></section>
+
+    <section class="section section-cream" id="citation"><div class="container citation-grid"><div><div class="section-kicker"><span>05</span> / READ & CITE</div><h2>Join the<br /><em>conversation.</em></h2><p class="citation-desc">A position paper in Findings of the Association for Computational Linguistics: EMNLP 2026, pp. 32011–32023.</p><div class="citation-actions"><a class="btn btn-dark" href="https://aclanthology.org/2026.findings-emnlp.1503.pdf" target="_blank" rel="noopener">Read PDF ↗</a><a class="btn btn-outline-dark" href="https://aclanthology.org/2026.findings-emnlp.1503/" target="_blank" rel="noopener">ACL Anthology ↗</a></div></div><div class="bib-box"><div class="bib-head"><span>BIBTEX</span><button id="copy-bib" type="button">Copy citation ↗</button></div><pre id="bibtex">@inproceedings{xiaolongwang-etal-2026-beyond,
+  title = {Beyond Task-Based Evaluation: Toward Situated
+           Benchmarks for Educational {LLM}s},
+  author = {Wang, Xiaolong and Xu, Tianyi and Zou, Rui
+            and Zuo, Jiawen and Zhang, Mingzi
+            and Li, Keqian and Zhao, Zhe and Wei, Ye
+            and Zhou, Aimin},
+  booktitle = {Findings of the Association for
+               Computational Linguistics: {EMNLP} 2026},
+  year = {2026},
+  pages = {32011--32023},
+  publisher = {Association for Computational Linguistics},
+  url = {https://aclanthology.org/2026.findings-emnlp.1503/}
+}</pre></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><div><div class="footer-brand">S<span>.</span> <span> SITUATED / EVAL</span></div><p>Evaluating educational AI where learning happens.</p></div><div class="footer-right"><a href="#top">Back to top ↑</a><a href="https://aclanthology.org/2026.findings-emnlp.1503/" target="_blank" rel="noopener">Publication ↗</a><span>© 2026 Paper authors</span></div></div></footer>
+</body></html>
